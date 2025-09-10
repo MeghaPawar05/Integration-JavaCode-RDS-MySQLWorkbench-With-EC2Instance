@@ -106,5 +106,23 @@ Inside MySQL shell:
     INSERT INTO users (name, address, contact) VALUES
     ('Alice Johnson', '123 Main St, Springfield', '555-1234'),
     ('Bob Smith', '456 Oak Ave, Rivertown', '555-5678'),
+  ![image_alt](https://github.com/Pawar-Megha/Integration-JavaCode-RDS-MySQLWorkbench-With-EC2Instance/blob/cdcaa91e0eb855737b117da045fb4051de7e9c11/img/out-wb.png)  
+
+  🔹 Step 6: Install Java on EC2
+  
+    Java installation code:-
+    sudo yum install java-17-amazon-corretto-devel -y
+
+    MySQL installation code:-
+    sudo dnf install mariadb105 -y
+
+    jdbc driver:-
+    wget https://github.com/awslabs/aws-mysql-jdbc/releases/download/1.1.15/aws-mysql-jdbc-1.1.15.jar
+
+🔹 Step 7: Deploy Your App
+Compile java file:- javac -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp.java
+
+Run java file: java -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp
+![image_alt]()
 
 
