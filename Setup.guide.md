@@ -48,4 +48,63 @@
 6.Launch instance.
 
 👉 Note the Public IP (to access via browser).
-![image_alt]()
+![image_alt](https://github.com/Pawar-Megha/Integration-JavaCode-RDS-MySQLWorkbench-With-EC2Instance/blob/842098717dc4327d382f51f62fc44cc22a402fdc/img/ec2.png)
+
+🔹 Step 3: Security Group Configuration
+=
+RDS Security Group:
+
+    Inbound rule → MySQL/Aurora (3306).
+    Source = EC2’s security group (not 0.0.0.0/0 ❌).
+    
+EC2 Security Group:
+
+    Inbound → SSH (22) from your IP.
+    Inbound → HTTP (80) or Tomcat (8080) from anywhere.
+=
+
+🔹 Step 4: Connect EC2 to RDS
+=
+1.SSH into EC2:
+
+    ssh -i mykey.pem ec2-user@13.200.251.169
+    Install MySQL client (for testing):
+
+2.sudo dnf install mariadb105 -y
+
+       (Ubuntu: sudo apt-get install -y mysql-client)
+
+3.Test connection:
+
+    mysql -h javacode-rds-project.cb0y2csmwusj.ap-south-1.rds.amazonaws.com -u admin -p
+If it connects, ✅ EC2 → RDS network is working.
+
+=
+
+🔹 Step 5: Create Database & Table in RDS
+=
+Inside MySQL shell:
+
+    Database Creation code:-
+    create database storage;
+
+    Database using code:-
+    use storage;
+
+    Table creation code:-
+
+    CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(200),
+    contact VARCHAR(15)
+    );
+
+
+    Table Data:-
+
+    INSERT INTO users (name, address, contact) VALUES
+    ('Alice Johnson', '123 Main St, Springfield', '555-1234'),
+    ('Bob Smith', '456 Oak Ave, Rivertown', '555-5678'),
+
+
