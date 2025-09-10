@@ -123,6 +123,7 @@ Inside MySQL shell:
 Compile java file:- javac -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp.java
 
 Run java file: java -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp
-![image_alt]()
+<img width="1303" height="666" alt="image" src="https://github.com/user-attachments/assets/ed692a5a-95ae-435f-93d5-880c5d9c3296" />
+
 
 
