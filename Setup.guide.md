@@ -105,7 +105,7 @@ Inside MySQL shell:
 
     INSERT INTO users (name, address, contact) VALUES
     ('Alice Johnson', '123 Main St, Springfield', '555-1234'),
-    ('Bob Smith', '456 Oak Ave, Rivertown', '555-5678'),
+    ('Bob Smith', '456 Oak Ave, Rivertown', '555-5678');
   ![image_alt](https://github.com/Pawar-Megha/Integration-JavaCode-RDS-MySQLWorkbench-With-EC2Instance/blob/cdcaa91e0eb855737b117da045fb4051de7e9c11/img/out-wb.png)  
 
   🔹 Step 6: Install Java on EC2
