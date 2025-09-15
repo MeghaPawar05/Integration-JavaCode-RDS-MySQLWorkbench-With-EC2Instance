@@ -3,11 +3,11 @@
 =
 1.Go to AWS Console → RDS → Create Database.
 
-2.Engine = MySQL (or Aurora MySQL).
+2.Engine :- MySQL (or Aurora MySQL).
 
-3.Deployment = Standard.
+3.Deployment :- Standard.
 
-4.Templates = Free tier (if testing).
+4.Templates :- Free tier (if testing).
 
 5.Set:
 
@@ -16,7 +16,7 @@
     *Password = Admin123456
     *Connectivity:
 
-6.VPC = same VPC where your EC2 will be launched.
+6.VPC :-same VPC where your EC2 will be launched.
 
      *Public Access = No (best practice, keep private). 
      *Security group: create/select one (we’ll edit later).
@@ -29,19 +29,19 @@
 =
 1.Go to EC2 → Launch Instance.
 
-2.AMI = Amazon Linux 2023 (or Ubuntu 22.04).
+2.AMI :- Amazon Linux 2023 (or Ubuntu 22.04).
 
-3.Instance type = t2.micro (free tier).
+3.Instance type :- t2.micro (free tier).
 
-4.Key pair = choose/create (for SSH).
+4.Key pair :- choose/create (for SSH).
 
 5.Network settings:
 
-   VPC = same as RDS.
+   VPC :- same as RDS.
 
-   Subnet = same or peered subnet.
+   Subnet :- same or peered subnet.
 
-   Security group = allow:
+   Security group :- allow:
 
      22 (SSH) from your IP.
      8080 (Tomcat) or 80 (HTTP) for web app.
