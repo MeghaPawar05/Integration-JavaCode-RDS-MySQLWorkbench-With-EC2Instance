@@ -119,10 +119,17 @@ Inside MySQL shell:
     jdbc driver:-
     wget https://github.com/awslabs/aws-mysql-jdbc/releases/download/1.1.15/aws-mysql-jdbc-1.1.15.jar
 
-🔹 Step 7: Deploy Your App
-Compile java file:- javac -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp.java
+    nano UserDatabaseApp.java
+    
 
-Run java file: java -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp
+🔹 Step 7: Deploy Your App
+Compile java file:-
+
+    javac -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp.java
+
+Run java file: 
+
+    java -cp .:aws-mysql-jdbc-1.1.15.jar UserDatabaseApp
 <img width="1303" height="666" alt="image" src="https://github.com/user-attachments/assets/ed692a5a-95ae-435f-93d5-880c5d9c3296" />
 <img width="1861" height="992" alt="image" src="https://github.com/user-attachments/assets/4b8f1086-6977-48ea-94a9-452e269746a2" />
 
